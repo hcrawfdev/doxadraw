@@ -1,0 +1,14 @@
+2023-10-01T20:57:09.403Z    +63ms [debug] Config loaded {"version":"2.26.9","cdkVersion":"2.95.1","constructsVersion":"10.2.69","config":{"name":"doxa-t3-sst","region":"us-east-1","stage":"prod","ssmPrefix":"/sst/doxa-t3-sst/prod/"},"metafile":{"inputs":{"sst.config.ts":{"bytes":215,"imports":[{"path":"sst","kind":"import-statement","external":true},{"path":"sst/constructs","kind":"import-statement","external":true}],"format":"esm"}},"outputs":{".sst.config.1696193829348.mjs":{"imports":[],"exports":["default"],"entryPoint":"sst.config.ts","inputs":{"sst.config.ts":{"bytesInOutput":126}},"bytes":308}}},"paths":{"config":"/Users/hcrawf/projects/doxa-t3-sst/sst.config.ts","root":"/Users/hcrawf/projects/doxa-t3-sst","out":"/Users/hcrawf/projects/doxa-t3-sst/.sst","artifacts":"/Users/hcrawf/projects/doxa-t3-sst/.sst/artifacts"}}
+2023-10-01T20:57:10.157Z   +754ms [debug] Using AWS profile 
+2023-10-01T20:57:10.177Z    +20ms [debug] Created AWS client STSClient
+2023-10-01T20:57:10.177Z     +0ms [debug] Fetching app metadata
+2023-10-01T20:57:10.178Z     +1ms [debug] Initializing bootstrap context
+2023-10-01T20:57:10.178Z     +0ms [debug] Created AWS client CloudFormationClient
+2023-10-01T20:57:10.417Z   +239ms [debug] Using identity Account: 333130669893 User: AIDAU3EBCT5CS2EIZKIZQ
+2023-10-01T20:57:10.463Z    +46ms [debug] Loaded bootstrap status
+2023-10-01T20:57:10.464Z     +1ms [debug] Bootstrap context initialized {"status":"ready","version":"7.2","bucket":"sstbootstrap-useast124d14e4b-et73n3kkz4f4"}
+2023-10-01T20:57:10.835Z   +371ms [debug] Fetching app metadata: not found
+2023-10-01T20:57:11.580Z   +745ms [debug] Synthesizing stacks...
+2023-10-01T20:57:11.586Z     +6ms [debug] Generating types in /Users/hcrawf/projects/doxa-t3-sst/.sst/types
+2023-10-01T20:57:11.689Z   +103ms [debug] Running "npx --yes open-next@2.1.5 build" script
+2023-10-01T20:57:22.355Z +10666ms [debug] {}

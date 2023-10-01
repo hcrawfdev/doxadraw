@@ -1,0 +1,149 @@
+{
+  "version": "34.0.0",
+  "artifacts": {
+    "hcrawf-doxa-t3-sst-Site.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "hcrawf-doxa-t3-sst-Site.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "hcrawf-doxa-t3-sst-Site": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://333130669893/us-east-1",
+      "properties": {
+        "templateFile": "hcrawf-doxa-t3-sst-Site.template.json",
+        "tags": {
+          "sst:app": "doxa-t3-sst",
+          "sst:stage": "hcrawf"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::333130669893:role/cdk-hnb659fds-deploy-role-333130669893-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::333130669893:role/cdk-hnb659fds-cfn-exec-role-333130669893-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-333130669893-us-east-1/b2bc3fc2d1105824469314fdae697f8b0d476863e5cee83d0541d3a0ed7e49a2.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "hcrawf-doxa-t3-sst-Site.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::333130669893:role/cdk-hnb659fds-lookup-role-333130669893-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "hcrawf-doxa-t3-sst-Site.assets"
+      ],
+      "metadata": {
+        "/hcrawf-doxa-t3-sst-Site": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "sst:app",
+                "Value": "doxa-t3-sst"
+              },
+              {
+                "Key": "sst:stage",
+                "Value": "hcrawf"
+              }
+            ]
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/CustomResourceHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomResourceHandlerServiceRole41AEC181"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/CustomResourceHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomResourceHandlerE8FB56BA"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/site/ServerFunctionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionRole1F8F4FAC"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/site/ServerFunction/AssetReplacerPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionAssetReplacerPolicy304BF125"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/site/ServerFunction/AssetReplacer/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionAssetReplacer9A11D516"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/site/ServerFunction/ServerFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunction6DFA6F1B"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/site/ServerFunction/ServerFunction/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteServerFunctionLogRetention7123678D"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/site/Parameter_url/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "siteParameterurl3D1716BC"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/SSTStackOutputSSTMetadata": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SSTMetadata"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/hcrawf-doxa-t3-sst-Site/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "hcrawf-doxa-t3-sst-Site"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
